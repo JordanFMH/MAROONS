@@ -1,0 +1,790 @@
+*,
+*::after,
+*::before{    
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    header{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        background-color: black;
+        padding: 5px;
+        width: 100%;
+        .header-section-navegacion{
+            ul{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                list-style-type: none;
+                li{
+                    margin-left: 50px;
+                    transition: 0.6s;
+                    a{
+                        text-decoration: none;
+                        color: white;
+                        font-size: 20px;
+                        padding: 5px;
+                        transition: 0.4s;
+                    }
+                    a:hover{
+                        color: black;
+                    }
+                }
+                .li-1:hover{
+                    background-color: #FFD700;
+                    transform: scale(1.12);
+                    border-radius: 5px;
+                }
+                .li-2:hover{
+                    background-color: #B22222;
+                    transform: scale(1.12);
+                    border-radius: 5px;
+                }
+                .li-3:hover{
+                    background-color: #4682B4;
+                    transform: scale(1.12);
+                    border-radius: 5px;
+                }
+                .li-4:hover{
+                    background-color: #6B8E23;
+                    transform: scale(1.12);
+                    border-radius: 5px;
+                }
+            }
+        }
+        .abrir, .cerrar{
+            display: none;
+        }
+    }
+
+    main{
+        width: 100%;
+        .main-section-mision{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            text-align: center;
+            margin: 10px;
+            
+            .main-mision{
+                text-align: justify;
+                margin: 50px;
+                width: 50%;
+                h3{
+                    text-align: center;
+                }
+            }
+            .main-imgM{
+                margin: 24px;
+                width: 50%;
+            }
+        }
+
+        .main-section-vision{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            text-align: center;
+            .main-vision{
+                text-align: justify;
+                margin: 50px;
+                width: 50%;
+                h3{
+                    text-align: center;
+                }
+            }
+            .main-imgV{
+                margin: 24px;
+                width: 50%;
+            }
+        }
+
+        .linea{
+            border: none;
+            height: 3px;
+            background: linear-gradient(to right, rgb(0, 0, 0), rgb(0, 102, 255));
+            width: 90%;
+            margin: 20px auto;
+        }
+
+        .main-carrusel{
+            margin: 20px 300px 20px 300px;
+            div{
+                border-radius: 10px;
+            }
+            h3{
+                text-align: center;
+            }
+            div{
+                h5{
+                    color: white;
+                }
+                p{
+                    color: white;
+                }
+            }
+        }
+
+        .main-info-empresa{
+            .main-info-1{
+                display: flex;
+                align-items: center;
+                margin-top: 20px;
+                article{
+                    width: 70%;
+                    transition: 0.6s;
+                    h3{
+                        text-align: center;
+                    }
+                    p{
+                        font-size: 20px;
+                        padding: 0 50px 0 50px;
+                    }
+                }
+                article:hover{
+                    transform: scale(1.02);
+                }
+                div{
+                    transition: 0.6s;
+                }
+                div:hover{
+                    transform: scale(1.02);
+                }
+            }
+            .main-info-2{
+                display: flex;
+                align-items: center;
+                margin-bottom: 20px;
+                div{
+                    transition: 0.6s;
+                }
+                div:hover{
+                    transform: scale(1.02);
+                }
+                article{
+                    width: 70%;
+                    transition: 0.6s;
+                    h3{
+                        text-align: center;
+                    }
+                    p{
+                        font-size: 20px;
+                        padding: 0 50px 0 50px;
+                    }
+                }
+                article:hover{
+                    transform: scale(1.02);
+                }
+            }
+        }
+    }
+
+    footer{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        background-color: black;
+        color: white;
+        width: 100%;
+
+        .footer-section1-2{
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            width: 50%;
+            .footer-section1-contactos{
+                h3{
+                    padding-bottom: 20px;
+                    text-align: center;
+                }
+                ul{
+                    list-style-type: none;
+                    text-align: center;
+                    li{
+                        text-align: left;
+                        padding-bottom: 20px;
+                        a{
+                            transition: all 0.5;
+                            border-bottom: 3px solid transparent;
+                            transition: all 0.9s ease-out;
+                            font-size: 18px;
+                            text-decoration: none;
+                            color: white;
+                            i{
+                                font-size: 22px;
+                            }
+                        }
+                        a:hover{
+                            border-bottom: 3px solid white;
+                        }
+                    }
+                }
+            }
+            .footer-section2-redes{
+                h3{
+                    padding-bottom: 20px;
+                    text-align: center;
+                }
+                ul{
+                    list-style-type: none;
+                    text-align: center;
+                    li{
+                        padding-bottom: 20px;
+                        text-align: left;
+                        a{
+                            transition: all 0.5;
+                            border-bottom: 3px solid transparent;
+                            transition: all 0.9s ease-out;
+                            font-size: 18px;
+                            text-decoration: none;
+                            color: white;    
+                            i{
+                                font-size: 22px;
+                            }
+                        }
+                        a:hover{
+                            border-bottom: 3px solid white;
+                        }
+                    }
+                }
+            }
+        }
+        .footer-section3-direccion{
+            ul{
+                list-style-type: none;
+                text-align: center;
+                li{
+                    text-align: right;
+                    a{
+                        text-decoration: none;
+                        color: white;
+                    }
+                }
+            }
+        }
+        .footer-boton-inicio{
+            padding-top: 305px;
+        }
+    }
+}
+
+@media (max-width: 1030px) {
+    body {
+        header {
+            .header-section-navegacion{
+                ul li a{
+                    font-size: 25px;
+                }
+            }
+        }
+
+        main {
+            .main-section-mision{
+                flex-direction: column;
+                .main-mision{
+                    width: auto;
+                    h3{
+                        font-size: 50px;
+                    }
+                    p{
+                        font-size: 40px;
+                    }
+                }
+                .main-imgM{
+                    width: auto;
+                }
+            }
+            .main-section-vision{
+                flex-direction: column-reverse;
+                .main-vision{
+                    width: auto;
+                    h3{
+                        font-size: 50px;
+                    }
+                    p{
+                        font-size: 40px;
+                    }
+                }
+                .main-imgV{
+                    width: auto;
+                }
+            }
+            .main-carrusel{
+                margin: 30px;
+                h3{
+                    font-size: 50px;
+                }
+
+            }
+            .main-info-empresa{
+                .main-info-1{
+                    flex-direction: column;
+                }
+                .main-info-2{
+                    flex-direction: column-reverse;
+                    margin-top: 20px;
+                }
+            }   
+        }
+
+        footer {
+            .footer-section1-2{
+                display: flex;
+                flex-direction: column;
+                .footer-section1-contactos{     
+                    ul{ 
+                        li{
+                            text-align: left;
+                            a{
+                                font-size: 20px;
+                                i{
+                                    font-size: 24px;
+                                }
+                            }
+                        }
+                    }
+                }
+                .footer-section2-redes{
+                    ul{
+                        padding-left: 0;
+                        li{
+                            text-align: left;
+                            a{
+                                font-size: 20px;
+                                i{
+                                    font-size: 24px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .footer-section3-direccion{
+                margin-top: 50px;
+            }
+            .footer-boton-inicio{
+                margin-top: 94px;
+                a{
+                    button{
+                        padding: 10px 15px 10px 15px;
+                    }   
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1000px) {
+    body{
+        footer{
+            display: flex;
+            flex-direction: column;
+            .footer-section1-2{
+                width: 100%;
+                justify-content: center;
+                .footer-section1-contactos{
+                    h3{
+                        text-align: center;
+                        font-size: 50px;
+                    }
+                    ul{
+                        display: flex;
+                        flex-direction: row;
+                        padding-left: 0;
+                        li{
+                            margin: 20px 40px 20px 40px;
+                            a{
+                                font-size: 30px;
+                            }
+                        }
+                    }
+                }
+                .footer-section2-redes{
+                    h3{
+                        text-align: center;
+                        font-size: 50px ;
+                    }
+                    ul{
+                        display: flex;
+                        flex-direction: row;
+                        li{
+                            margin: 20px 40px 20px 40px;
+                            a{
+                                font-size: 30px;
+                            }
+                        }
+                    }
+                }
+            }
+            .footer-section3-direccion{
+                margin-top: 0;
+                ul{
+                    padding-left: 0;
+                    h3{
+                        font-size: 50px;
+                    }
+                }
+            }
+            .footer-boton-inicio{  
+                margin: 10px;
+                padding-top: 0;
+                text-align: center;
+                a{
+                    button{
+                        padding: 20px 30px 20px 30px;
+                    }   
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 814px) {
+    body{
+        header{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            nav{
+                position: absolute;
+                visibility: hidden;
+                display: flex;
+                flex-direction: row-reverse;
+                justify-content: space-between;
+                background-color: black;
+                width: 50%;
+                opacity: 0;
+                top: 0;
+                right: 0;
+                .cerrar{
+                    margin: 21px 5px 135px 5px;
+                    padding: 20px 30px 20px 30px;
+                    border-radius: 15px;
+                }
+                .header-list{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: none;
+                    li{
+                        margin-left: 0;
+                        padding-bottom: 10px;
+                    }
+                }
+            }
+            .abrir{
+                padding: 20px 30px 20px 30px;
+                border-radius: 10px;
+            }
+            .abrir, .cerrar{
+                display: block;
+            }
+            .nav-visible{
+                opacity: 1;
+                visibility: visible;
+            }
+            .ocultarBoton{
+                display: none;
+            } 
+        }
+        main{
+            .main-section-mision{
+                .main-mision{
+                    h3{
+                        font-size: 40px;
+                    }
+                    p{
+                        font-size: 25px;
+                    }
+                }
+            }
+            .main-section-vision{
+                .main-vision{
+                    h3{
+                        font-size: 40px;
+                    }
+                    p{
+                        font-size: 25px;
+                    }
+                }
+            }
+            .main-carrusel{
+                h3{
+                    font-size: 40px;
+                }
+            }
+            .main-info-empresa{
+                .main-info-1{
+                    article{
+                        width: 90%;
+                        h3{
+                            font-size: 30px;
+                        }
+                        p{
+                            font-size: 25px;
+                        }
+                    }
+                }
+                .main-info-2{
+                    article{
+                        width: 90%;
+                        h3{
+                            font-size: 30px;
+                        }
+                        p{
+                            font-size: 25px;
+                        }
+                    } 
+                }
+            }
+        }
+        footer{
+            .footer-section1-2{
+                .footer-section1-contactos{
+                    ul{
+                        flex-direction: column;
+                        li{
+                            text-align: center;
+                        }
+                    }
+                }
+            }
+            
+        }
+    }
+}
+@media (max-width: 672px) {
+    body{
+        footer{
+            .footer-section1-2{
+                .footer-section1-contactos{
+                    ul{
+                        li{
+                            a{
+                                font-size: 30px;
+                                i{
+                                    font-size: 30px;
+                                }
+                            }
+                        }
+                    }
+                }
+                .footer-section2-redes{
+                    ul{
+                        flex-direction: column;
+                        li{
+                            text-align: center;
+                            a{
+                                font-size: 30px;
+                                i{
+                                    font-size: 30px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media (max-width: 593px) {
+    body{
+        header{
+            .header-section-navegacion{
+                width: 60%;
+            }
+        }
+        main{
+            .main-info-empresa{
+                .main-info-1{
+                    div{
+                        img{
+                            width: 400px;
+                            height: 400px;
+                        }
+                    }
+                }
+                .main-info-2{
+                    div{
+                        img{
+                            width: 400px;
+                            height: 400px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media (max-width: 494px) {
+    body{
+        header{
+            .header-section-navegacion{
+                width: 70%;
+            }
+        }
+    }
+}
+@media (max-width: 423px) {
+    body{
+        header{
+                .header-section-navegacion{
+                    .cerrar{
+                        margin-bottom: 155px;
+                    }  
+                }
+        }
+        main{
+            .main-info-empresa{
+                .main-info-1{
+                    article{
+                        h3{
+                            font-size: 30px;
+                        }
+                        p{
+                            font-size: 20px;
+                        }
+                    }
+                    div{
+                        img{
+                            width: 300px;
+                            height: 300px;
+                        }
+                    }
+                }
+                .main-info-2{
+                    div{
+                        img{
+                            width: 300px;
+                            height: 300px;
+                        }
+                    }
+                    article{
+                        h3{
+                            font-size: 30px;
+                        }
+                        p{
+                            font-size: 20px;
+                        }
+                    }
+                }
+            }
+        }
+        footer{
+            .footer-section1-2{
+                .footer-section1-contactos{
+                    ul{
+                        li{
+                            a{
+                                font-size: 25px;
+                                i{
+                                    font-size: 25px;
+                                }
+                            }
+                        }
+                    }
+                }
+                .footer-section2-redes{
+                    ul{
+                        flex-direction: column;
+                        li{
+                            text-align: center;
+                            a{
+                                font-size: 25px;
+                                i{
+                                    font-size: 25px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .footer-section3-direccion{
+                ul{
+                    iframe{
+                        width: 300px;
+                        height: 250px;
+                    }
+                }
+            }
+        }
+    }
+}
+@media (max-width: 404px) {
+    body{
+        header{
+            flex-direction: column;
+            .header-section-navegacion{
+                flex-direction: column;
+                width: 100%;
+                .cerrar{
+                    margin: 10px 140px 10px 140px;
+                }
+            }
+            .abrir{
+                margin: 10px 0 5px 0;
+            }
+        }
+        main{
+            .main-section-mision{
+                .main-mision{
+                    h3{
+                        font-size: 40px;
+                    }
+                    p{
+                        font-size: 20px;
+                    }
+                }
+            }
+            .main-section-vision{
+                .main-vision{
+                    h3{
+                        font-size: 40px;
+                    }
+                    p{
+                        font-size: 20px;
+                    }
+                }
+            }
+        }
+        footer{
+            .footer-section1-2{
+                .footer-section1-contactos{
+                    h3{
+                        font-size: 40px;
+                    }
+                    ul{
+                        li{
+                            a{
+                                font-size: 30px;
+                            }
+                        }
+                    }
+                }
+                .footer-section2-redes{
+                    h3{
+                        font-size: 40px;
+                    }
+                    ul{
+                        li{
+                            a{
+                                font-size: 30px;
+                            }
+                        }
+                    }
+                }
+            }
+            .footer-section3-direccion{
+                ul{
+                    h3{
+                        font-size: 40px;
+                    }
+                }
+            }
+        }
+    }
+}
