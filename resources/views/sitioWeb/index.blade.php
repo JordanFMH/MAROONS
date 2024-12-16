@@ -4,14 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MAROONS</title>
-    <link rel="stylesheet" href="{{asset(sitioWeb/css/style.css)}}">
+    <link rel="stylesheet" href="{{asset('sitioWeb/css/style.css')}}">
+    <link rel="shortcut icon" href="{{asset('sitioWeb/img/Ico.ico')}}" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 </head>
 <body>
     <header class="header" id="inicio">
         <div class="header-section-logo">
-            <img src="https://placehold.co/100" alt="">
+            <img src="{{asset('sitioWeb/img/Logo.webp')}}" alt="">
         </div>
         <nav class="header-section-navegacion">
           <button class="cerrar"><i class="fa-solid fa-xmark"></i></button>
@@ -26,12 +27,13 @@
     </header>
 
     <main>
-        <section id="mis-vis" class="main-section-mision">
+      <section id="mis-vis">
+      <section class="main-section-mision">
             <article class="main-mision">
                 <h3>Misión</h3>
-                <p>
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Explicabo nostrum libero laborum cupiditate ad voluptatibus similique iure non. Obcaecati molestiae vitae nobis impedit autem aspernatur ratione quo, fugit aliquam et.
-                </p>
+                @foreach($getInicio as $getInicios)
+                <p>{{$getInicios->mision}}</p>
+                @endforeach
             </article>      
             <article class="main-imgM">
                 <img src="https://placehold.co/200" alt="">
@@ -50,6 +52,7 @@
             </article> 
         </section >
         <section>
+      </section>
           <hr class="linea">
         </section>
         <section id="servicios" class="main-carrusel">
@@ -62,21 +65,21 @@
                 </div>
                 <div class="carousel-inner">
                   <div class="carousel-item active" data-bs-interval="10000">
-                    <img src="assets/img/carrusel_img1.jpg" class="d-block w-100" alt="...">
+                    <img src="{{asset('sitioWeb/img/carrusel_img1.jpg')}}" class="d-block w-100" alt="...">
                     <div class="carousel-caption d-none d-md-block">
                       <h5>Nombre servicio</h5>
                       <p>Descripción servicio empresa.</p>
                     </div>
                   </div>
                   <div class="carousel-item" data-bs-interval="2000">
-                    <img src="assets/img/carrusel_img1.jpg" class="d-block w-100" alt="...">
+                    <img src="{{asset('sitioWeb/img/carrusel_img1.jpg')}}" class="d-block w-100" alt="...">
                     <div class="carousel-caption d-none d-md-block">
                       <h5>Nombre servicio</h5>
                       <p>Descripción servicio empresa.</p>
                     </div>
                   </div>
                   <div class="carousel-item">
-                    <img src="assets/img/carrusel_img1.jpg" class="d-block w-100" alt="...">
+                    <img src="{{asset('sitioWeb/img/carrusel_img1.jpg')}}" class="d-block w-100" alt="...">
                     <div class="carousel-caption d-none d-md-block">
                       <h5>Nombre servicio</h5>
                       <p>Descripción servicio empresa.</p>
@@ -117,24 +120,24 @@
         <section class="footer-section1-contactos">
           <h3>Contactos</h3>
           <ul>
-              <li><a target="_blank" href="https://workspace.google.com/intl/es/gmail/"><i class="fa-solid fa-envelope"></i> empresa@gmail.com</a></li>
-              <li><a target="_blank" href="https://maps.app.goo.gl/HMi3QdxoW5VfJrWQ8"><i class="fa-solid fa-location-dot"></i> Google Maps</a></li>
-              <li><a target="_blank" href=""><i class="fa-solid fa-phone"></i> 0999999999</a></li>
+              <li><a target="_blank" href="https://workspace.google.com/intl/es/gmail/"><i class="fa-solid fa-envelope"></i> Gmail</a></li>
+              <li><a target="_blank" href="https://maps.app.goo.gl/H91A9z2b35QjBv1D7"><i class="fa-solid fa-location-dot"></i> Google Maps</a></li>
+              <li><a target="_blank" href=""><i class="fa-solid fa-phone"></i> 0993480186</a></li>
           </ul>
         </section>
         <section class="footer-section2-redes">
             <h3>Redes Sociales</h3>
             <ul>
-                <li><a target="_blank" href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i> Facebook</a></li>  
+                
                 <li><a target="_blank" href="https://www.instagram.com"><i class="fa-brands fa-instagram"></i> Instagram</a></li>             
-                <li><a target="_blank" href="https://www.tiktok.com/"><i class="fa-brands fa-tiktok"></i> TikTok</a></li>    
+                   
             </ul>  
         </section>
       </section>
       <section class="footer-section3-direccion">
             <ul>
                 <h3>Geolocalización</h3>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.774466119938!2d-78.54124172627809!3d-0.2686378353579307!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91d598e9248ea1fd%3A0x70edbef75c8b1e7e!2sIRFEYAL!5e0!3m2!1ses!2sec!4v1733235221416!5m2!1ses!2sec" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15959.252110135792!2d-78.46052002265307!3d-0.09332634066060236!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91d58f1506f70035%3A0x844ab3eda6b427db!2sCarapungo%2C%20Quito!5e0!3m2!1ses!2sec!4v1734363906174!5m2!1ses!2sec" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </ul>
         </section>
         <section class="footer-boton-inicio">
@@ -142,6 +145,6 @@
       </section>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-    <script src="{{aseet(sitioWeb/js/script.js)}}"></script>
+    <script src="{{asset('sitioWeb/js/script.js')}}"></script>
 </body>
 </html>

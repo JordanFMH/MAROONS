@@ -12,9 +12,15 @@ body{
         flex-direction: row;
         justify-content: space-around;
         align-items: center;
-        background-color: black;
+        background: linear-gradient(to right, #a8a8a8, #030303);
         padding: 5px;
         width: 100%;
+        .header-section-logo{
+            img{
+                width: 100px;
+                height: 100px;
+            }
+        }
         .header-section-navegacion{
             ul{
                 display: flex;
@@ -34,24 +40,27 @@ body{
                     a:hover{
                         color: black;
                     }
+                    .header-hambu-4:hover{
+                        color: #fefefe;
+                    }
                 }
                 .li-1:hover{
-                    background-color: #FFD700;
+                    background-color: #fefefe;
                     transform: scale(1.12);
                     border-radius: 5px;
                 }
                 .li-2:hover{
-                    background-color: #B22222;
+                    background-color: #f5c230;
                     transform: scale(1.12);
                     border-radius: 5px;
                 }
                 .li-3:hover{
-                    background-color: #4682B4;
+                    background-color: #6b6695;
                     transform: scale(1.12);
                     border-radius: 5px;
                 }
                 .li-4:hover{
-                    background-color: #6B8E23;
+                    background-color: #030303;
                     transform: scale(1.12);
                     border-radius: 5px;
                 }
@@ -64,12 +73,14 @@ body{
 
     main{
         width: 100%;
+        #mis-vis{
+            background: linear-gradient(to right, #f5c230, #fefefe);
+        }
         .main-section-mision{
             display: flex;
             flex-direction: row;
             justify-content: space-around;
             text-align: center;
-            margin: 10px;
             
             .main-mision{
                 text-align: justify;
@@ -105,15 +116,16 @@ body{
         }
 
         .linea{
+            margin: 0;
             border: none;
             height: 3px;
             background: linear-gradient(to right, rgb(0, 0, 0), rgb(0, 102, 255));
-            width: 90%;
-            margin: 20px auto;
+            width: 100%;
         }
 
         .main-carrusel{
-            margin: 20px 300px 20px 300px;
+            padding: 20px 300px 20px 300px;
+            background: linear-gradient(to right, #fefefe, #fefefe);
             div{
                 border-radius: 10px;
             }
@@ -131,10 +143,10 @@ body{
         }
 
         .main-info-empresa{
+            background: linear-gradient(to right, #fefefe, #6b6695);
             .main-info-1{
                 display: flex;
                 align-items: center;
-                margin-top: 20px;
                 article{
                     width: 70%;
                     transition: 0.6s;
@@ -159,7 +171,6 @@ body{
             .main-info-2{
                 display: flex;
                 align-items: center;
-                margin-bottom: 20px;
                 div{
                     transition: 0.6s;
                 }
@@ -188,7 +199,7 @@ body{
         display: flex;
         flex-direction: row;
         justify-content: space-around;
-        background-color: black;
+        background: linear-gradient(to right, #030303, #a8a8a8);
         color: white;
         width: 100%;
 
