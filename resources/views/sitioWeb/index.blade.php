@@ -12,14 +12,14 @@
 <body>
     <header class="header" id="inicio">
         <div class="header-section-logo">
-            <img src="{{asset('sitioWeb/img/Logo.webp')}}" alt="">
+            <img src="{{asset('sitioWeb/img/Logo.png')}}" alt="">
         </div>
         <nav class="header-section-navegacion">
           <button class="cerrar"><i class="fa-solid fa-xmark"></i></button>
             <ul class="header-list">
                 <li class="li-1"><a class="header-hambu-1" href="#inicio">Inicio</a></li>
                 <li class="li-2"><a class="header-hambu-2" href="#mis-vis">Misión y Visión</a></li>
-                <li class="li-3"><a class="header-hambu-3" href="#servicios">Servicios</a></li>
+                <li class="li-3"><a class="header-hambu-3" href="#sobrenosotros">Sobre Nosotros</a></li>
                 <li class="li-4"><a class="header-hambu-4" href="#contactos">Contactos</a></li>
             </ul>
           </nav>
@@ -36,18 +36,18 @@
                 @endforeach
             </article>      
             <article class="main-imgM">
-                <img src="https://placehold.co/200" alt="">
+                <img src="{{asset('sitioWeb/img/Mision-img.webp')}}" alt="">
             </article>
         </section>
 
         <section class="main-section-vision">
             <article class="main-imgV">
-                    <img src="https://placehold.co/200" alt="">
+                    <img src="{{asset('sitioWeb/img/vision-img.webp')}}" alt="">
             </article> 
             <article class="main-vision">    
                 <h3>Visión</h3>
                 <p>
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Recusandae, velit odit? Itaque, ut ratione distinctio eaque autem voluptatum in mollitia explicabo sequi labore neque reprehenderit delectus? Obcaecati, aut natus! Ipsa. 
+                Ser un referente a nivel nacional en la promoción de la cultura afroecuatoriana y el liderazgo comunitario, consolidando una red de juventudes que impulse el desarrollo integral de nuestras comunidades, fomentando la inclusión, la equidad y el orgullo de compartir nuestra herencia ancestral. 
                 </p>     
             </article> 
         </section >
@@ -55,8 +55,8 @@
       </section>
           <hr class="linea">
         </section>
-        <section id="servicios" class="main-carrusel">
-            <h3>SERVICIOS</h3>
+        <section id="sobrenosotros" class="main-carrusel">
+            <h3>Sobre Nosotros</h3>
             <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
                 <div class="carousel-indicators">
                   <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -65,24 +65,24 @@
                 </div>
                 <div class="carousel-inner">
                   <div class="carousel-item active" data-bs-interval="10000">
-                    <img src="{{asset('sitioWeb/img/carrusel_img1.jpg')}}" class="d-block w-100" alt="...">
+                    <img src="{{asset('sitioWeb/img/Carrusel_img-1.webp')}}" class="d-block w-100" alt="...">
                     <div class="carousel-caption d-none d-md-block">
-                      <h5>Nombre servicio</h5>
-                      <p>Descripción servicio empresa.</p>
+                      <h5></h5>
+                      <p></p>
                     </div>
                   </div>
                   <div class="carousel-item" data-bs-interval="2000">
-                    <img src="{{asset('sitioWeb/img/carrusel_img1.jpg')}}" class="d-block w-100" alt="...">
+                    <img src="{{asset('sitioWeb/img/Carrusel_img-2.webp')}}" class="d-block w-100" alt="...">
                     <div class="carousel-caption d-none d-md-block">
-                      <h5>Nombre servicio</h5>
-                      <p>Descripción servicio empresa.</p>
+                      <h5></h5>
+                      <p></p>
                     </div>
                   </div>
                   <div class="carousel-item">
-                    <img src="{{asset('sitioWeb/img/carrusel_img1.jpg')}}" class="d-block w-100" alt="...">
+                    <img src="{{asset('sitioWeb/img/Carrusel_img-3.webp')}}" class="d-block w-100" alt="...">
                     <div class="carousel-caption d-none d-md-block">
-                      <h5>Nombre servicio</h5>
-                      <p>Descripción servicio empresa.</p>
+                      <h5></h5>
+                      <p></p>
                     </div>
                   </div>
                 </div>
@@ -100,16 +100,16 @@
         <section class="main-info-empresa">
           <section class="main-info-1">
             <article>
-              <h3>Título</h3>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit ex voluptates dolorem. Amet laborum dolorem placeat voluptates numquam architecto eveniet facere deserunt magnam perspiciatis, quasi commodi repudiandae neque harum cupiditate!</p>
+              <h3>¿Qué es Maroons?</h3>
+              <p>Maroons Quito es una organización conformada por juventudes afroecuatorianas, comprometidas con la promoción de la cultura, la integración social y el desarrollo comunitario en el sector de Carapungo.</p>
             </article>
-            <div><img src="https://placehold.co/500" alt=""></div>
+            <div><img src="{{asset('sitioWeb/img/Info-img1.webp')}}" alt=""></div>
           </section>
           <section class="main-info-2">
-            <div><img src="https://placehold.co/500" alt=""></div>
+            <div><img src="{{asset('sitioWeb/img/Info-img2.webp')}}" alt=""></div>
             <article>
-              <h3>Título</h3>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit ex voluptates dolorem. Amet laborum dolorem placeat voluptates numquam architecto eveniet facere deserunt magnam perspiciatis, quasi commodi repudiandae neque harum cupiditate!</p>
+              <h3>¿En que año se creó?</h3>
+              <p>Desde su creación, en 2024, la organización ha sido un espacio de encuentro, diálogo y acción, donde jóvenes líderes impulsan proyectos que fortalecen la identidad cultural, promueven la igualdad y fomentan la participación comunitaria.</p>
             </article>
           </section>
         </section>
