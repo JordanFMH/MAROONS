@@ -11,7 +11,7 @@ class Misvis extends Model
 
     protected $fillable = [
         'texto',
-        'url',
+        'status',
         'imagenes_id'
     ];
 }

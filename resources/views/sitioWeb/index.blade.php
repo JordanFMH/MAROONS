@@ -31,9 +31,9 @@
       <section class="main-section-mision">
             <article class="main-mision">
                 <h3>Misión</h3>
-                @foreach($getInicio as $getInicios)
-                <p>{{$getInicios->mision}}</p>
-                @endforeach
+                
+                <p></p>
+                
             </article>      
             <article class="main-imgM">
                 <img src="{{asset('sitioWeb/img/Mision-img.webp')}}" alt="">
