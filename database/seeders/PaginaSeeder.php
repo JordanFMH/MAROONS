@@ -16,20 +16,20 @@ class PaginaSeeder extends Seeder
      */
     public function run()
     {
-        $faker = Faker::create();
+        /*$faker = Faker::create();
         DB::table('informaciones')->insert([
             'logo' => $faker->url,
             'correo' => $faker->safeEmail,
             'telefono' => $faker->phoneNumber,
             'direccion' => $faker->text
-        ]);
+        ]);*/
         
         DB::table('misvis')->insert([
             'texto' => $faker->text,
             'url' => $faker->url
         ]);
         
-        DB::table('servicios')->insert([
+        /*DB::table('servicios')->insert([
             'titulo' => $faker->text,
             'descripcion' => $faker->text,
             'servicioURL' => $faker->url
@@ -45,6 +45,6 @@ class PaginaSeeder extends Seeder
         
         DB::table('categorias')->insert([
             'nombreCT' => $faker->name
-        ]);
+        ]);*/
     }
 }

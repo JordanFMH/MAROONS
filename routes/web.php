@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PaginaController;
 use App\Http\Controllers\CategoriasController;
 use App\Http\Controllers\MisVisController;
+use App\Http\Controllers\Panel\MisionVisController;
 
 /*
 |--------------------------------------------------------------------------
@@ -28,3 +29,9 @@ Route::put('/ActualizarCategoria/{id}', [CategoriasController::class, 'ActuCateg
 Route::get('/informacionMisionVision', [MisVisController::class, 'infoMisVis']);
 Route::get('/editMisVis/{id}', [MisVisController::class, 'EditCategoria']);
 Route::put('/actuMisVis/{id}', [MisVisController::class, 'ActuCategoria']);
+
+//Rutas Mision y Vision
+Route::get('/MisVis',[MisionVisController::class, 'index']);
+Route::get('/CreateMisVis', [MisionVisController::class, 'create']);
+Route::post('/StoreMisVis', [MisionVisController::class, 'store']);
+Route::get('/EditMisVis', [MisionVisController::class, 'edit']);
