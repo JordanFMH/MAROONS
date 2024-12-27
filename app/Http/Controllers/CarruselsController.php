@@ -3,9 +3,8 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Models\MisVis;
 
-class MisVisController extends Controller
+class CarruselsController extends Controller
 {
     public function infoMisVis(){
         $getMisVi = MisVis::all();

@@ -16,17 +16,9 @@ class PaginaSeeder extends Seeder
      */
     public function run()
     {
-        /*$faker = Faker::create();
-        DB::table('informaciones')->insert([
-            'logo' => $faker->url,
-            'correo' => $faker->safeEmail,
-            'telefono' => $faker->phoneNumber,
-            'direccion' => $faker->text
-        ]);*/
-        
         DB::table('misvis')->insert([
-            'texto' => $faker->text,
-            'url' => $faker->url
+            'name' => $faker->text,
+            'image' => $faker->url
         ]);
         
         /*DB::table('servicios')->insert([

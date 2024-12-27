@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class Imagenes extends Migration
+class Carrusels extends Migration
 {
     /**
      * Run the migrations.
@@ -13,9 +13,9 @@ class Imagenes extends Migration
      */
     public function up()
     {
-        Schema::create('imagenes', function(Blueprint $table){
+        Schema::create('carrusels', function(Blueprint $table){
             $table->id();
-            $table->text('imgURL');
+            $table->text('imagen');
             $table->enum('status',['ACTIVE','DESACTIVATE'])->default('ACTIVE');
             $table->timestamps();
         });
@@ -28,6 +28,6 @@ class Imagenes extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('imagenes');
+        Schema::dropIfExists('carrusels');
     }
 }

@@ -5,10 +5,10 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\Inicio;
 use App\Models\Informaciones;
-use App\Models\Misvis;
+use App\Models\MisVis;
 use App\Models\Servicios;
 use App\Models\Redes;
-use App\Models\Imagenes;
+use App\Models\Carrusels;
 use App\Models\Categorias;
 
 class PaginaController extends Controller
@@ -21,16 +21,16 @@ class PaginaController extends Controller
 
     public function inicio(){
         $getInformaciones = Informaciones::all();
-        $getMisvis = Misvis::all();
+        $getMisVis = MisVis::all();
         $getServicios = Servicios::all();
         $getRedes = Redes::all();
-        $getImagenes = Imagenes::all();
+        $getCarrusel = Carrusels::all();
         $getCategorias = Categorias::all();
         
         return view('SitioWeb/index', compact(
             'getInformaciones',
-            'getImagenes',
-            'getMisvis',
+            'getCarrusel',
+            'getMisVis',
             'getServicios',
             'getRedes',
             'getCategorias'
