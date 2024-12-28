@@ -10,6 +10,7 @@ class Carrusels extends Model
     use HasFactory;
 
     protected $fillable = [
-        'imagen'
+        'imagen',
+        'status'
     ];
 }

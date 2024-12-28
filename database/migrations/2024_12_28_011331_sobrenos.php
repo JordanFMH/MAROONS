@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class Informaciones extends Migration
+class Sobrenos extends Migration
 {
     /**
      * Run the migrations.
@@ -13,16 +13,16 @@ class Informaciones extends Migration
      */
     public function up()
     {
-        Schema::create('informaciones', function(Blueprint $table){
+        Schema::create('sobrenos', function(Blueprint $table){
             $table->id();
-            $table->text('logo');
-            $table->string('correo');
-            $table->string('telefono');
-            $table->text('direccion');
-            $table->enum('status',['ACTIVE','DEACTIVATE'])->default('ACTIVE');
+            $table->string('titulo');
+            $table->text('texto');
+            $table->text('imagen');
+            $table->enum('status',['ACTIVE','DESACTIVATE'])->default('ACTIVE');
             $table->timestamps();
-        }); 
+        });
     }
+
     /**
      * Reverse the migrations.
      *
@@ -30,6 +30,6 @@ class Informaciones extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('informaciones');
+        Schema::dropIfExists('sobrenos');
     }
 }

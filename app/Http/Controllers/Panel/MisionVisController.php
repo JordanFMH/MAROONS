@@ -22,7 +22,7 @@ class MisionVisController extends Controller
        $MisVis = $request->all();//almancena los datos que se mandan desde el fomulario html
         
         if($imagen = $request->file('image')){
-            $ruta = 'imagen/';
+            $ruta = 'imagenMisVis/';
             $nombreI = date('YmdHis').".".$imagen->getClientOriginalExtension();
             $imagen->move($ruta,$nombreI);
             $MisVis['image'] = "$nombreI";
@@ -47,7 +47,7 @@ class MisionVisController extends Controller
         $MisVis = MisVis::find($datos['id']);
 
         if($imagen = $request->file('image')){
-            $ruta = 'imagen/';
+            $ruta = 'imagenMisVis/';
             $nombreI = date('YmdHis').".".$imagen->getClientOriginalExtension();
             $imagen->move($ruta,$nombreI);
             $datos['image'] = "$nombreI";

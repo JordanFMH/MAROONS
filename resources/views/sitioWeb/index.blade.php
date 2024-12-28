@@ -12,7 +12,7 @@
 <body>
     <header class="header" id="inicio">
         <div class="header-section-logo">
-            <img src="{{asset('sitioWeb/img/Logo.png')}}" alt="">
+            <img src="{{asset('imagenLogo/'.$Logo->logo)}}" alt="">
         </div>
         <nav class="header-section-navegacion">
           <button class="cerrar"><i class="fa-solid fa-xmark"></i></button>
@@ -21,6 +21,7 @@
                 <li class="li-2"><a class="header-hambu-2" href="#mis-vis">Misión y Visión</a></li>
                 <li class="li-3"><a class="header-hambu-3" href="#sobrenosotros">Sobre Nosotros</a></li>
                 <li class="li-4"><a class="header-hambu-4" href="#contactos">Contactos</a></li>
+                <li class="li-4"><a class="header-hambu-4" href="/Logo">Panel</a></li>
             </ul>
           </nav>
         <button class="abrir"><i class="fa-solid fa-bars"></i></button>
@@ -32,23 +33,21 @@
             <article class="main-mision">
                 <h3>Misión</h3>
                 
-                <p></p>
+                <p>{{$Mision->name}}</p>
                 
             </article>      
             <article class="main-imgM">
-                <img src="{{asset('sitioWeb/img/Mision-img.webp')}}" alt="">
+                <img src="{{asset('imagenMisVis/'.$Mision->image)}}" alt="">
             </article>
         </section>
 
         <section class="main-section-vision">
             <article class="main-imgV">
-                    <img src="{{asset('sitioWeb/img/vision-img.webp')}}" alt="">
+                    <img src="{{asset('imagenMisVis/'.$Vision->image)}}" alt="">
             </article> 
             <article class="main-vision">    
                 <h3>Visión</h3>
-                <p>
-                Ser un referente a nivel nacional en la promoción de la cultura afroecuatoriana y el liderazgo comunitario, consolidando una red de juventudes que impulse el desarrollo integral de nuestras comunidades, fomentando la inclusión, la equidad y el orgullo de compartir nuestra herencia ancestral. 
-                </p>     
+                <p>{{$Vision->name}}</p>     
             </article> 
         </section >
         <section>
@@ -65,21 +64,21 @@
                 </div>
                 <div class="carousel-inner">
                   <div class="carousel-item active" data-bs-interval="10000">
-                    <img src="{{asset('sitioWeb/img/Carrusel_img-1.webp')}}" class="d-block w-100" alt="...">
+                    <img src="{{asset('imagenCarrusel/'.$Img1C->imagen)}}" class="d-block w-100" alt="...">
                     <div class="carousel-caption d-none d-md-block">
                       <h5></h5>
                       <p></p>
                     </div>
                   </div>
                   <div class="carousel-item" data-bs-interval="2000">
-                    <img src="{{asset('sitioWeb/img/Carrusel_img-2.webp')}}" class="d-block w-100" alt="...">
+                    <img src="{{asset('imagenCarrusel/'.$Img2C->imagen)}}" class="d-block w-100" alt="...">
                     <div class="carousel-caption d-none d-md-block">
                       <h5></h5>
                       <p></p>
                     </div>
                   </div>
                   <div class="carousel-item">
-                    <img src="{{asset('sitioWeb/img/Carrusel_img-3.webp')}}" class="d-block w-100" alt="...">
+                    <img src="{{asset('imagenCarrusel/'.$Img3C->imagen)}}" class="d-block w-100" alt="...">
                     <div class="carousel-caption d-none d-md-block">
                       <h5></h5>
                       <p></p>
@@ -100,16 +99,16 @@
         <section class="main-info-empresa">
           <section class="main-info-1">
             <article>
-              <h3>¿Qué es Maroons?</h3>
-              <p>Maroons Quito es una organización conformada por juventudes afroecuatorianas, comprometidas con la promoción de la cultura, la integración social y el desarrollo comunitario en el sector de Carapungo.</p>
+              <h3>{{$SobreN1->titulo}}</h3>
+              <p>{{$SobreN1->texto}}</p>
             </article>
-            <div><img src="{{asset('sitioWeb/img/Info-img1.webp')}}" alt=""></div>
+            <div><img src="{{asset('imagenSobreNos/'.$SobreN1->imagen)}}" alt=""></div>
           </section>
           <section class="main-info-2">
-            <div><img src="{{asset('sitioWeb/img/Info-img2.webp')}}" alt=""></div>
+            <div><img src="{{asset('imagenSobreNos/'.$SobreN2->imagen)}}" alt=""></div>
             <article>
-              <h3>¿En que año se creó?</h3>
-              <p>Desde su creación, en 2024, la organización ha sido un espacio de encuentro, diálogo y acción, donde jóvenes líderes impulsan proyectos que fortalecen la identidad cultural, promueven la igualdad y fomentan la participación comunitaria.</p>
+              <h3>{{$SobreN2->titulo}}</h3>
+              <p>{{$SobreN2->texto}}</p>
             </article>
           </section>
         </section>
