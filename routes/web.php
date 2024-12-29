@@ -6,6 +6,8 @@ use App\Http\Controllers\Panel\LogosController;
 use App\Http\Controllers\Panel\MisionVisController;
 use App\Http\Controllers\Panel\CarruselsController;
 use App\Http\Controllers\Panel\SobreNosController;
+use App\Http\Controllers\Panel\ContactosController;
+use App\Http\Controllers\Panel\RedesController;
 
 /*
 |--------------------------------------------------------------------------
@@ -55,3 +57,21 @@ Route::get('/editSobreNos/{id}', [SobreNosController::class, 'edit']);
 Route::put('/updateSobreNos/{imagen}', [SobreNosController::class, 'update']);
 Route::get('/statusSobreNos/{id}', [SobreNosController::class, 'status']);
 Route::get('/SobreNosD',[SobreNosController::class, 'indexD']);
+
+//Rutas Contactos PC
+Route::get('/Contactos', [ContactosController::class, 'index']);
+Route::get('/createCon', [ContactosController::class, 'create']);
+Route::post('/storeCon', [ContactosController::class, 'store']);
+Route::get('/editCon/{id}', [ContactosController::class,'edit']);
+Route::put('/updateCon', [ContactosController::class,'update']);
+Route::get('/statusCon/{id}', [ContactosController::class,'status']);
+Route::get('/ConD', [ContactosController::class, 'indexD']);
+
+//Rutas Redes PC
+Route::get('/Redes', [RedesController::class, 'index']);
+Route::get('/createRed', [RedesController::class, 'create']);
+Route::post('/storeRed', [RedesController::class, 'store']);
+Route::get('/editRed/{id}', [RedesController::class,'edit']);
+Route::put('/updateRed', [RedesController::class,'update']);
+Route::get('/statusRed/{id}', [RedesController::class,'status']);
+Route::get('/RedD', [RedesController::class, 'indexD']);

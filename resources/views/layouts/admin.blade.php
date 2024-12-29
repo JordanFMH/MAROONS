@@ -4,8 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" href="{{asset('sitioWeb/img/Ico.ico')}}" type="image/x-icon">
     <link href="{{asset('sitioWeb/css/bootstrap.min.css')}}" rel="stylesheet">
     <link href="{{asset('PanelControl/dashboard.css')}}" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Panel de Control</title>
 </head>
 <body>
@@ -52,9 +54,21 @@
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="Contactos">
+              <a class="nav-link" href="/Contactos">
                 <span data-feather="layers"></span>
                 Contactos
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/Redes">
+                <span data-feather="layers"></span>
+                Redes Sociales
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/Geolos">
+                <span data-feather="layers"></span>
+                Geolocalización
               </a>
             </li>
           </ul>
