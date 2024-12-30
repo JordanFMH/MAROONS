@@ -27,7 +27,8 @@
         </div>
 
         <div class="col-12">
-          <button class="btn btn-outline-success" type="submit">Actualizar</button>
+          <button style="margin-bottom: 15px;" class="btn btn-outline-success" type="submit">Actualizar</button>
+          <a style="margin-bottom: 15px;" class="btn btn-outline-primary" href="/Redes">Regresar</a>
         </div>
       </form>
 </div>

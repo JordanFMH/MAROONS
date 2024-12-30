@@ -119,16 +119,16 @@
         <section class="footer-section1-contactos">
           <h3>Contactos</h3>
           <ul>
-              <li><a target="_blank" href="https://workspace.google.com/intl/es/gmail/"><i class="fa-solid fa-envelope"></i> Gmail</a></li>
-              <li><a target="_blank" href="https://maps.app.goo.gl/H91A9z2b35QjBv1D7"><i class="fa-solid fa-location-dot"></i> Google Maps</a></li>
-              <li><a target="_blank" href=""><i class="fa-solid fa-phone"></i> 0993480186</a></li>
+              <li><a target="_blank" href="{{$Cont1->link}}"><i class="{{$Cont1->icon}}"></i> {{$Cont1->title}}</a></li>
+              <li><a target="_blank" href="{{$Cont2->link}}"><i class="{{$Cont2->icon}}"></i> {{$Cont2->title}}</a></li>
+              <li><a target="_blank" href="{{$Cont3->link}}"><i class="{{$Cont3->icon}}"></i> {{$Cont3->title}}</a></li>
           </ul>
         </section>
         <section class="footer-section2-redes">
             <h3>Redes Sociales</h3>
             <ul>
                 
-                <li><a target="_blank" href="https://www.instagram.com"><i class="fa-brands fa-instagram"></i> Instagram</a></li>             
+                <li><a target="_blank" href="{{$Red1->link}}"><i class="{{$Red1->icon}}"></i> {{$Red1->title}}</a></li>             
                    
             </ul>  
         </section>
@@ -136,7 +136,7 @@
       <section class="footer-section3-direccion">
             <ul>
                 <h3>Geolocalización</h3>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15959.252110135792!2d-78.46052002265307!3d-0.09332634066060236!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91d58f1506f70035%3A0x844ab3eda6b427db!2sCarapungo%2C%20Quito!5e0!3m2!1ses!2sec!4v1734363906174!5m2!1ses!2sec" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <iframe src="{{$Geo->link}}" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </ul>
         </section>
         <section class="footer-boton-inicio">

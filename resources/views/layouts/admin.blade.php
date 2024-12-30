@@ -66,7 +66,7 @@
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="/Geolos">
+              <a class="nav-link" href="/Geolocalizacion">
                 <span data-feather="layers"></span>
                 Geolocalización
               </a>

@@ -8,8 +8,8 @@
         <h1 class="h2">Listado de Contactos Desactivados</h1>
         <div class="btn-toolbar mb-2 mb-md-0">
           <div class="btn-group me-2">
-        
                 <a class="btn btn-outline-success" href="/createCon">Ingresar</a>
+                <a class="btn btn-outline-primary" href="/Contactos">Regresar</a>
           </div>
         </div>
       </div>

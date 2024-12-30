@@ -26,6 +26,7 @@
 
         <div class="col-12">
           <button class="btn btn-outline-success" type="submit">Guardar</button>
+          <a class="btn btn-outline-primary" href="/Redes">Regresar</a>
         </div>
       </form>
 </div>

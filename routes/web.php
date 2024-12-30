@@ -8,6 +8,7 @@ use App\Http\Controllers\Panel\CarruselsController;
 use App\Http\Controllers\Panel\SobreNosController;
 use App\Http\Controllers\Panel\ContactosController;
 use App\Http\Controllers\Panel\RedesController;
+use App\Http\Controllers\Panel\GeolosController;
 
 /*
 |--------------------------------------------------------------------------
@@ -75,3 +76,12 @@ Route::get('/editRed/{id}', [RedesController::class,'edit']);
 Route::put('/updateRed', [RedesController::class,'update']);
 Route::get('/statusRed/{id}', [RedesController::class,'status']);
 Route::get('/RedD', [RedesController::class, 'indexD']);
+
+//Rutas Geolocalización PC
+Route::get('/Geolocalizacion', [GeolosController::class, 'index']);
+Route::get('/createGeo', [GeolosController::class, 'create']);
+Route::post('/storeGeo', [GeolosController::class, 'store']);
+Route::get('/editGeo/{id}', [GeolosController::class,'edit']);
+Route::put('/updateGeo', [GeolosController::class,'update']);
+Route::get('/statusGeo/{id}', [GeolosController::class,'status']);
+Route::get('/GeoD', [GeolosController::class, 'indexD']);

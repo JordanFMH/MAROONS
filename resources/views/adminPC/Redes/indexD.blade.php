@@ -9,6 +9,7 @@
         <div class="btn-toolbar mb-2 mb-md-0">
           <div class="btn-group me-2">
                 <a class="btn btn-outline-success" href="/createRed">Ingresar</a>
+                <a class="btn btn-outline-primary" href="/Redes">Regresar</a>
           </div>
         </div>
       </div>

@@ -24,9 +24,9 @@
             <input type="text" class="form-control" id="link" name="link" required>
         </div>
 
-
         <div class="col-12">
           <button class="btn btn-outline-success" type="submit">Guardar</button>
+          <a class="btn btn-outline-primary" href="/Contactos">Regresar</a>
         </div>
       </form>
 </div>

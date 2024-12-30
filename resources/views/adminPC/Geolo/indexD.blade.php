@@ -5,11 +5,11 @@
     <hr class="featurette-divider">
 
     <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
-        <h1 class="h2">Listado de Redes Sociales</h1>
+        <h1 class="h2">Listado de Geolocalización Desactivados</h1>
         <div class="btn-toolbar mb-2 mb-md-0">
           <div class="btn-group me-2">
-                <a class="btn btn-outline-success" href="/createRed">Ingresar</a>
-                <a class="btn btn-outline-danger" href="/RedD">Desactivados</a>
+                <a class="btn btn-outline-success" href="/createGeo">Ingresar</a>
+                <a class="btn btn-outline-primary" href="/Geolocalizacion">Regresar</a>
           </div>
         </div>
       </div>
@@ -18,22 +18,18 @@
           <thead>
             <tr>
               <th scope="col">Id</th>
-              <th scope="col">Red Social</th>
-              <th scope="col">Icono</th>
               <th scope="col">Link</th>
               <th scope="col">Acciones</th>
             </tr>
           </thead>
           <tbody>
-            @foreach ($Red as $item)
+            @foreach ($Geo as $item)
                 <tr>
                   <td>{{$item->id}}</td>
-                  <td>{{$item->title}}</td>
-                  <td><i class="{{$item->icon}}"></i></td>
-                  <td><a target="_blank" style="text-decoration: none" href="{{$item->link}}">{{$item->title}}</a></td>
+                  <td><iframe src="{{$item->link}}" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                   <td>
-                    <a type="button" class="btn btn-outline-primary" href="/editRed/{{$item->id}}">Editar</a>
-                    <a type="button" class="btn btn-outline-danger" href="/statusRed/{{$item->id}}">Desactivar</a>
+                    <a type="button" class="btn btn-outline-primary" href="/editGeo/{{$item->id}}">Editar</a>
+                    <a type="button" class="btn btn-outline-success" href="/statusGeo/{{$item->id}}">Activar</a>
                   </td>
                 </tr>
             @endforeach
